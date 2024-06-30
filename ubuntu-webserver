@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ubuntu/apache2
+    restart: unless-stopped
+
+    ports:
+      - '8080:80'
+    volumes:
+      - ~/your/desired/directory:/var/www/html
